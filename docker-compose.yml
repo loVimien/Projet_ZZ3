@@ -24,13 +24,6 @@ services:
       MONGO_URL: mongodb://project_db:27017/admin
     networks:
       - project
-
-  nmap_module:
-    image: project_nmap_module
-    build: ./nmap_module
-    hostname: project_nmap_module
-    networks:
-      - project
   
   mongo:
     image: mongo

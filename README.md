@@ -1,5 +1,11 @@
 # Projet Evaluation de la surface d'attaque externe d'une société
 
+## Clonage du dépot
+
+```
+git clone --recurse-submodules git@github.com:loVimien/Projet_ZZ3.git
+```
+
 ## Construction des images
 
 ```
