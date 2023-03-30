@@ -18,6 +18,8 @@ docker-compose build
 docker-compose up -d
 ```
 
+L'application est ensuite accessible sur le port 80 de la machine locale (modifiable dans docker-compose.yml)
+
 ## Suppression des conteneurs
 
 ```
