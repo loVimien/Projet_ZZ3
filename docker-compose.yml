@@ -1,0 +1,33 @@
+services:
+  back:
+    image: project_back
+    hostname: project_back
+    ports: 
+      - "80:3000"
+    volumes:
+      - project_back_plugins:/usr/src/app/plugins
+    environment:
+      MONGO_URL: mongodb://project_db:27017/admin
+    networks:
+      - project
+
+  nmap_module:
+    image: project_nmap_module
+    hostname: project_nmap_module
+    networks:
+      - project
+  
+  mongo:
+    image: mongo
+    hostname: project_db
+    volumes:
+      - project_db_data:/data/db
+    networks:
+      - project
+
+volumes:
+  project_back_plugins:
+  project_db_data:
+
+networks:
+  project: {}
