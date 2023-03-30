@@ -1,0 +1,7 @@
+[submodule "back"]
+	path = back
+	url = git@github.com:loVimien/Projet_ZZ3_Backend.git
+
+[submodule "nmap"]
+	path = nmap_module
+	utl = git@github.com:loVimien/Projet_ZZ3_nmap_module.git
