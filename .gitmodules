@@ -5,3 +5,9 @@
 [submodule "nmap"]
 	path = nmap_module
 	utl = git@github.com:loVimien/Projet_ZZ3_nmap_module.git
+[submodule "nmap_module"]
+	path = nmap_module
+	url = git@github.com:loVimien/Projet_ZZ3_nmap_module.git
+[submodule "front"]
+	path = front
+	url = git@github.com:Axpronnier/Projet_ZZ3_Front.git

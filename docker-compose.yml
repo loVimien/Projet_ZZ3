@@ -1,9 +1,23 @@
 services:
+  front:
+    image: projet_front
+    build: ./front
+    hostname: projet_front
+    container_name: project_front
+    ports:
+      - "80:4200"
+    environment:
+      - API_URL=project_back
+    networks:
+      - project
+
   back:
     image: project_back
+    build: ./back
     hostname: project_back
+    container_name: project_back
     ports: 
-      - "80:3000"
+      - "3000:3000"
     volumes:
       - project_back_plugins:/usr/src/app/plugins
     environment:
@@ -13,6 +27,7 @@ services:
 
   nmap_module:
     image: project_nmap_module
+    build: ./nmap_module
     hostname: project_nmap_module
     networks:
       - project
